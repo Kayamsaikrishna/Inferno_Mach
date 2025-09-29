@@ -7,11 +7,6 @@
   to = "/index.html"
   status = 200
 
-[[redirects]]
-  from = "/success.html"
-  to = "/success.html"
-  status = 200
-
 [dev]
   command = "python -m http.server 8000"
   targetPort = 8000

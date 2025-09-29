@@ -1,6 +1,6 @@
 # INFERNO MACH - AI-Powered Engineering Solutions
 
-![INFERNO MACH Logo](assets/InfernoMach_Company_Logo.png)
+![INFERNO MACH Logo](assets/logo.txt)
 
 Official website for INFERNO MACH, pioneers in AI-driven engineering transforming industries with innovative solutions that enhance efficiency, performance, and sustainability.
 
@@ -63,6 +63,17 @@ website/
 1. Connect your GitHub repository to Netlify
 2. Set build command to: `echo 'No build command needed for static site'`
 3. Set publish directory to: `.`
+
+## 📧 Contact Form
+
+The contact form uses Formspree for form handling:
+- Endpoint: https://formspree.io/f/mqaypgzo
+- Submissions are sent to: kayamsaikrishna@gmail.com
+
+To update the form endpoint:
+1. Sign up at [Formspree.io](https://formspree.io/)
+2. Create a new form and get your form ID
+3. Update the form action in index.html
 
 ## 📧 Contact
 
