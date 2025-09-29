@@ -1,60 +1,75 @@
-# INFERNO MACH Website
+# INFERNO MACH - AI-Powered Engineering Solutions
 
-This is the official website for INFERNO MACH, showcasing our AI-powered engineering solutions.
+![INFERNO MACH Logo](assets/logo.txt)
 
-## Deployment Options
+Official website for INFERNO MACH, pioneers in AI-driven engineering transforming industries with innovative solutions that enhance efficiency, performance, and sustainability.
 
-### Netlify Deployment Instructions
+## 🌐 Website Features
 
-1. **Sign up for Netlify**:
-   - Go to [netlify.com](https://netlify.com)
-   - Sign up for a free account
+- **Responsive Design**: Works on all devices from mobile to desktop
+- **Interactive 3D Viewer**: Powered by Spline for immersive experience
+- **AI Solutions Showcase**: Dedicated pages for all our AI products
+- **Case Studies**: Real-world applications with downloadable PDF
+- **Contact Form**: Easy communication with the team
 
-2. **Deploy the site**:
-   - Click "New site from Git" or "Add new site"
-   - Choose your Git provider (GitHub, GitLab, or Bitbucket)
-   - Select this repository
-   - Configure the build settings:
-     - Build command: `echo 'No build command needed for static site'`
-     - Publish directory: `.` (current directory)
-   - Click "Deploy site"
+## 🚀 AI Solutions
 
-3. **Alternative drag-and-drop deployment**:
-   - Zip the entire contents of this folder
-   - Go to your Netlify dashboard
-   - Drag and drop the zip file to the deployment area
+1. **LAW, FINTECH, Law Query** - AI Legal Document Analysis System
+2. **Plant Disease Detection** - Agricultural AI for crop health
+3. **Fin-Agentix** - Digital lending platform for India
+4. **Defense AI System** - Advanced Threat Detection
+5. **AI Quality Control** - Computer vision for material analysis
+6. **AI Measurement Tool** - Precision measurement application
 
-### Features
+## 🛠️ Technologies Used
 
-- Responsive design that works on all devices
-- Interactive 3D viewer powered by Spline
-- Complete contact form with validation
-- Case studies with downloadable PDF
-- Social media integration
+- HTML5 & CSS3
+- JavaScript
+- Spline 3D Viewer
+- Font Awesome Icons
+- Google Fonts
 
-### Contact Form Setup
+## 📁 Project Structure
 
-To make the contact form fully functional:
-
-1. Sign up at [Formspree.io](https://formspree.io/)
-2. Create a new form and get your unique form ID
-3. Update the form action in `index.html`:
-   ```html
-   <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-   ```
-
-### Custom Domain (Optional)
-
-To use a custom domain:
-1. Go to your Netlify site settings
-2. Navigate to "Domain management"
-3. Add your custom domain
-4. Follow the DNS configuration instructions
-
-## Local Development
-
-To run the site locally:
-```bash
-python -m http.server 8000
 ```
-Then open http://localhost:8000 in your browser.
+website/
+├── index.html          # Main landing page
+├── ai-solutions.html   # AI solutions overview
+├── case-studies.html   # Case studies showcase
+├── services.html       # Services page
+├── css/
+│   ├── style.css       # Main stylesheet
+│   └── solutions.css   # Solutions page styles
+├── js/
+│   └── script.js       # JavaScript functionality
+├── assets/
+│   ├── documents/      # PDF documents
+│   ├── images/         # Images and GIFs
+│   ├── favicon.txt     # Favicon
+│   └── logo.txt        # Company logo
+└── ...
+```
+
+## 🌍 Deployment
+
+### GitHub Pages (Recommended)
+1. Fork this repository
+2. Go to repository Settings
+3. Navigate to Pages section
+4. Select "Deploy from a branch"
+5. Choose main branch and / (root) folder
+
+### Netlify
+1. Connect your GitHub repository to Netlify
+2. Set build command to: `echo 'No build command needed for static site'`
+3. Set publish directory to: `.`
+
+## 📧 Contact
+
+For inquiries, please contact:
+- Email: kayamsaikrishna@gmail.com
+- Location: Bangalore, India
+
+---
+
+© 2025 INFERNO MACH. All rights reserved.
