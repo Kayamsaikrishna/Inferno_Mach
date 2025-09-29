@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy Instructions - INFERNO MACH</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .deployment-container {
+            max-width: 800px;
+            margin: 150px auto 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .step {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid #ff6b35;
+            background: #f8f9fa;
+            border-radius: 0 10px 10px 0;
+        }
+        .step h3 {
+            color: #ff6b35;
+            margin-top: 0;
+        }
+        .code-block {
+            background: #264653;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        .btn-large {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #ff6b35;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 10px 0;
+            transition: all 0.3s ease;
+        }
+        .btn-large:hover {
+            background: #264653;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>INFERNO MACH</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Back to Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="deployment-container">
+        <h1><i class="fas fa-rocket"></i> Deploy Your Website</h1>
+        <p>Follow these simple steps to deploy your INFERNO MACH website to GitHub Pages:</p>
+
+        <div class="step">
+            <h3><i class="fas fa-1"></i> Run the Deployment Script</h3>
+            <p>Double-click the <strong>DEPLOY_TO_GITHUB.bat</strong> file in your website folder. This will:</p>
+            <ul>
+                <li>Set up Git configuration</li>
+                <li>Initialize the repository</li>
+                <li>Add and commit all files</li>
+                <li>Open the GitHub new repository page</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3><i class="fas fa-2"></i> Create GitHub Repository</h3>
+            <p>On the GitHub page that opens:</p>
+            <ol>
+                <li>Name your repository: <strong>Inferno_Mach</strong></li>
+                <li>Make it <strong>Public</strong></li>
+                <li><strong>Do NOT</strong> initialize with a README</li>
+                <li>Click <strong>Create repository</strong></li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h3><i class="fas fa-3"></i> Connect and Push Code</h3>
+            <p>Copy and run these commands in Git Bash or terminal:</p>
+            <div class="code-block">
+                cd "d:\KAYAM_SAI_KRISHNA\InfernoMach\website"<br>
+                git remote add origin https://github.com/YOUR_USERNAME/Inferno_Mach.git<br>
+                git branch -M main<br>
+                git push -u origin main
+            </div>
+            <p>Replace <strong>YOUR_USERNAME</strong> with your actual GitHub username.</p>
+        </div>
+
+        <div class="step">
+            <h3><i class="fas fa-4"></i> Enable GitHub Pages</h3>
+            <p>After pushing your code:</p>
+            <ol>
+                <li>Go to your repository Settings</li>
+                <li>Navigate to Pages section</li>
+                <li>Select "Deploy from a branch"</li>
+                <li>Choose main branch and "/" folder</li>
+                <li>Click Save</li>
+            </ol>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <p>Your website will be live at: <strong>https://YOUR_USERNAME.github.io/Inferno_Mach/</strong></p>
+            <a href="index.html" class="btn-large"><i class="fas fa-home"></i> Back to Website</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 INFERNO MACH. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
