@@ -1,6 +1,6 @@
 # INFERNO MACH - AI-Powered Engineering Solutions
 
-![INFERNO MACH Logo](assets/logo.txt)
+![INFERNO MACH Logo](assets/InfernoMach_Company_Logo.png)
 
 Official website for INFERNO MACH, pioneers in AI-driven engineering transforming industries with innovative solutions that enhance efficiency, performance, and sustainability.
 
