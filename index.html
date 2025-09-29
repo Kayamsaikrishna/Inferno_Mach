@@ -14,7 +14,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="asseassets/InfernoMach_Company_Logo.png" alt="INFERNO MACH Logo">
+                <img src="assets/InfernoMach_Company_Logo.png" alt="INFERNO MACH Logo">
                 <h1>INFERNO MACH</h1>
             </div>
             <nav class="nav">
@@ -222,7 +222,13 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm" action="#" method="POST">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <!-- Hidden fields for Netlify -->
+                        <input type="hidden" name="form-name" value="contact">
+                        <p style="display: none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                        </p>
+                        
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
@@ -239,12 +245,6 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <!-- 
-                            To make this form functional:
-                            1. Sign up at https://formspree.io/
-                            2. Create a new form and get your form ID
-                            3. Replace the action attribute with: action="https://formspree.io/f/YOUR_FORM_ID"
-                        -->
                         <button type="submit" class="btn primary">Send Message</button>
                     </form>
                 </div>
